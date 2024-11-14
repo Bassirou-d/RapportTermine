@@ -1,0 +1,96 @@
+h1{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #ADD8E6;padding:10px;
+    color: red;
+    border-radius: 10px;
+    border: 2px solid black;padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+h2{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #ADD8E6;padding:10px;
+    color: red;
+    border-radius: 10px;
+    border: 2px solid black;padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+body{
+    background-color: #F0F4FF;
+}
+.Times{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+.Souligne {
+    text-decoration: underline;
+    font-size: 22px;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+}
+.codegnr{
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    flex:1;
+    max-width: 600px;
+}
+
+.result-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px;
+    gap: 80px;
+    max-width: 80%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+img{
+    display: flex;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.bordure100px{
+    display: flex;
+    border: black solid 1px;
+    border-radius: 100px;
+}
+result-img img{
+    max-width: 200px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+

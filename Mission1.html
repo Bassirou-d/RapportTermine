@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=Mission1.css>
+    <title>Mission 1</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="Paged'accueil.html">Accueil</a></li>
+        <li><a href="Mission1.html" target="_blank">Mission 1</a></li>
+        <li><a href="Mission2.html" target="_blank">Mission 2 </a></li>
+        <li><a href="Mission3.html" >Mission 3</a></li>
+
+    </ul>
+</nav>
+<section>
+    <h1>Mission 1</h1>
+
+    <h2>Contexte:</h2>
+    <div class="CC"> KDou est une <strong>entreprise commerciale</strong> qui vend des produits d’épicerie fine achetés auprès de
+        fournisseurs internationaux à des clients situés en France. L’entreprise réalise un bon chiffre d'affaires et
+        <strong>cherche à améliorer</strong> sa <strong>rentabilité</strong> et <strong>son positionnement</strong> face à la concurrence.
+        Elle souhaite aussi <strong>adopter une image plus "éco-friendly"</strong> en proposant des produits respectueux de l’environnement,
+        que les clients seraient prêts à payer plus cher. KDou a fait appel à notre équipe pour <strong>étudier son fonctionnement</strong>
+        et <strong>proposer des solutions</strong> pour renforcer son positionnement écologique. <br>
+        Pour cette mission, nous avons mené <strong>trois étapes</strong> distinctes <strong>d'analyse</strong> et de <strong>recommandations</strong>,
+        afin d'avoir <strong>un bilan structuré</strong> sur la base de données fournis sur <strong>Excel</strong> </div>
+
+
+    <h2>Bilan sur l'étude des données:</h2>
+    <h3>Etape 1: Relevé des clés primaires et étrangères</h3>
+    <p>Dans cette première étape, vous avez relevé les clés primaires et clés étrangères de la base de données.
+        Cela implique d'identifier les clés primaires, qui garantissent l'unicité de chaque enregistrement, et les clés étrangères,
+        qui établissent les relations entre les tables.</p>
+    <h4>Clés primaires pour la table:</h4>
+    <ul>
+        <li>Fournisseur = Numéro fournisseur</li>
+        <li>Produit = Réf produit</li>
+        <li>Catégorie = Code catégorie</li>
+        <li>Clientèle = Code client</li>
+        <li>Commande = N° commande</li>
+        <li>Détail Commande = Clé primaire composée de deux clés étrangères (Réf produit + N° Commande)</li>
+    </ul>
+
+    <h4>Clés étrangères pour la table:</h4>
+    <ul>
+        <li>Produit = Numéro fournisseur, Code catégorie</li>
+        <li>Commande = Code client</li>
+        <li>Détail Commande = Numéro commande</li>
+    </ul>
+
+
+    <h3>Etape 2: Analyse des données fournies</h3>
+    <p>Dans cette étape, nous avons <strong>analysé les données</strong> présentes dans la base de données en répondant à plusieurs questions clés,
+        cela a permis de <strong>mieux comprendre la structure</strong> des informations, et <strong>les relations entre les différentes tables</strong>,</p>
+
+    <div class="img1">
+        <div class="txtimg1">
+            <br><br><br> Réponse aux questions k, i et m
+        </div>
+        <img src="assets/images/images%20mission%201/Q3a.png" alt="Reponse a la question 3a" height="150">
+    </div>
+
+    <div class="img2">
+        <div class="txtimg2">
+            <br><br><br>  Réponse aux questions k, i et m
+        </div>
+        <img class="img2" src="assets/images/images%20mission%201/Q3h.png" alt="reponse a la question h" height="350">
+    </div>
+
+    <div class="img3">
+        <div class="txtimg3">
+            <br><br><br>  Réponse aux questions k, i et m
+        </div>
+        <img src="assets/images/images%20mission%201/Q3kim.png" alt="Reponse aux question k, i et m" height="300">
+    </div>
+
+    <h3>Etape 3: Relevé des problèmes dans la base de données</h3>
+    <p>Dans cette étape, nous avons <strong>relevé les problèmes identifiés dans la base de données</strong>.</p>
+
+    <table>
+        <tbody><tr>
+            <th class="centre">Problème</th>
+        </tr>
+        <tr>
+            <td>Dans les tables <strong>Clientèle</strong> et <strong>Fournisseur</strong>, la table « Société » apparaît deux fois pour deux types de société différentes.</td>
+        </tr>
+        <tr>
+            <td>Dans l’annexe, il y a <strong>seulement 2 fournisseurs mentionnés</strong> pour toutes les villes, alors que <strong>dans un autre tableau, le nombre de fournisseurs (« NB FOURN ») va jusqu’à 7</strong>. On ne sais pas si l’on parle des mêmes fournisseurs.</td>
+        </tr>
+        <tr>
+            <td>Certains contacts ont des <strong>fournisseurs</strong> (de 3 à 7) qui ne sont <strong>associés à aucune ville</strong>.</td>
+        </tr>
+        <tr>
+            <td>Les États-Unis <strong>apparaissent deux fois</strong> dans la base de données, une fois comme « États-Unis » et une fois comme « USA ».</td>
+        </tr>
+        <tr>
+            <td>Dans la table <strong>Fonction</strong>, « Chef des ventes » apparaît deux fois.</td>
+        </tr>
+        </tbody></table>
+
+
+    <h2>Amélioration possible:</h2>
+    <table>
+        <tbody><tr>
+            <th class="centre">Conseil pour améliorer la base</th>
+        </tr>
+        <tr>
+            <td>Il faudrait <strong>changer le nom des colonnes fournisseur</strong> pour ne pas prêter à confusion et mieux répartir les fournisseurs dans les villes.</td>
+        </tr>
+        <tr>
+            <td>Sinon, <strong>donnez</strong> à chaque contact <strong>des fournisseurs qui sont déjà répartis</strong> dans les villes.</td>
+        </tr>
+        <tr>
+            <td><strong>Vérifier</strong> si un pays a plusieurs appellations.</td>
+        </tr>
+
+        </tbody></table>
+
+    <h2>Conclusion:</h2>
+    <div>Au terme de cette étude, nous avons pu repérer plusieurs <strong>points d'amélioration</strong> pour la base de
+        données de l’entreprise <strong>KDou</strong>. Les principaux problèmes concernent les <strong>doublons</strong>
+        dans les noms des <strong>pays</strong> et des <strong>fonctions</strong>, ainsi que des <strong>incohérences</strong>
+        dans l’association des <strong>fournisseurs aux villes</strong>. Ces observations nous permettent de proposer des
+        <strong>solutions concrètes</strong> pour <strong>clarifier et simplifier</strong> les informations.
+        En résolvant ces problèmes, KDou pourra <strong>mieux organiser ses données</strong>, <strong>renforcer son engagement écologique
+        </strong>, et <strong>améliorer sa rentabilité</strong> grâce à une <strong>gestion plus précise</strong> et
+        <strong>cohérente</strong> de ses <strong>ressources</strong> et de ses <strong>relations fournisseurs</strong>.</div>
+
+</section>
+<footer>
+    <p>Mission 1 faite pour le 27/09/2024</p>
+    <p>Utilisation d'Excel pour cet premiere mission</p>
+    <p>Recherche pour l'entreprise KDOU</p>
+    <p>DOUZI Anass, DOUCOURE Bassirou, QUORAR Mohamed, ARAB Macy</p>
+</footer>
+
+</body>
+</html>
+
