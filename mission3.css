@@ -109,11 +109,3 @@ h2 {
 .insta-logo:hover{
     transform: scale(1.2);
 }
-
-
-
-
-nav li {
-    display: inline-block;
-    margin: 10px;
-}
