@@ -1,3 +1,4 @@
+
 /* styles.css */
 body {
     font-family: 'Roboto', sans-serif;
@@ -9,7 +10,7 @@ body {
 }
 
 header {
-    background: #4CAF50;
+    background: blueviolet;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -29,7 +30,7 @@ header h2 {
 }
 
 nav {
-    background: #388E3C;
+    background: lightskyblue;
 }
 
 nav ul {
@@ -53,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #2E7D32;
+    background:  darkblue;
     border-radius: 5px;
 }
 
@@ -76,15 +77,18 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.container-images{
+    text-align: center;
+}
+.images-centre{
+    width: 150px;
+    display: inline-block;
+}
+img:hover{
+    transform: scale(3.0);
+}
+img{
+    border: darkviolet;
+    border-style: solid;
+    border-radius: 10px;
+}
